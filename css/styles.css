@@ -94,9 +94,31 @@ body {
 
 /* =======================================NAV*/
 
-.nav-link {
-  color: var(--title-text-color);
+.nav {
+  display: flex;
+  align-items: center;
+}
 
+/* nav menu */
+.nav-menu {
+  display: flex;
+  margin-left: 93px;
+}
+
+.nav-menu .nav-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list {
+  display: flex;
+  margin-left: auto;
+}
+
+.nav-menu .nav-link {
+  display: block;
+  padding: 32px 0;
+
+  color: var(--title-text-color);
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -111,7 +133,16 @@ body {
   color: var(--accent);
 }
 
-.nav-contact {
+/* nav list contact */
+
+.nav-list .contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
+.nav-list .nav-contact {
+  display: block;
+  padding: 32px 0;
+
   color: var(--primary-text-color);
   font-weight: 500;
   line-height: 1.14;
@@ -253,7 +284,6 @@ body {
 }
 
 .footer-list {
-  display: inline-block;
   margin-top: 0;
   padding-bottom: 60px;
 }
