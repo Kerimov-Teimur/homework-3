@@ -109,11 +109,6 @@ body {
   margin-right: 50px;
 }
 
-.nav-list {
-  display: flex;
-  margin-left: auto;
-}
-
 .nav-menu .nav-link {
   display: block;
   padding: 32px 0;
@@ -134,6 +129,11 @@ body {
 }
 
 /* nav list contact */
+
+.nav-list {
+  display: flex;
+  margin-left: auto;
+}
 
 .nav-list .contact-item:not(:last-child) {
   margin-right: 50px;
@@ -181,7 +181,6 @@ body {
 
   color: var(--white-color);
   background-color: var(--accent);
-
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
@@ -197,21 +196,36 @@ body {
 }
 
 /* =====================================ABOUT*/
+
+.about-list {
+  margin: 94px 0;
+  display: flex;
+  background-color: teal;
+}
+
+.about-item {
+  width: calc((100% / 90px) / 4);
+  margin-right: 30px;
+  background-color: tomato;
+}
+
+.about-item:nth-child(4n) {
+  margin-right: 0;
+}
+
+/* .about-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+} */
 .about-title {
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 10px;
+  margin: 0 0 10px 0;
 }
 
 .about-text {
   line-height: 1.71;
   margin: 0;
-}
-
-.about-list {
-  margin-bottom: 94px;
 }
 
 /* ======================================WORK*/
