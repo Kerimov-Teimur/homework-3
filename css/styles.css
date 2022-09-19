@@ -194,10 +194,14 @@ body {
   margin-bottom: 50px;
 }
 
-.work-list {
+.work-item {
   margin-bottom: 94px;
 }
 /* ======================================TEAM*/
+
+.team {
+  background-color: var(--secondary-bcg-color);
+}
 
 .team-subtitle {
   font-weight: 500;
@@ -213,10 +217,6 @@ body {
   line-height: 1.18;
   text-align: center;
   margin: 0;
-}
-
-.team-list {
-  margin-bottom: 94px;
 }
 
 /* ====================================FOOTER*/
