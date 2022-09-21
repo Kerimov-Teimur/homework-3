@@ -36,22 +36,21 @@ body {
   width: 1200px;
   padding: 0 15px 0 15px;
   margin: 0 auto;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
-.list {
-  list-style: none;
-  margin: 0;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
   padding: 0;
-}
 
-.link {
-  text-decoration: none;
-  cursor: pointer;
-}
-
-.title {
-  color: var(--title-text-color);
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
 p,
@@ -70,18 +69,23 @@ ol {
   padding-left: 0;
 }
 
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
+.list {
+  list-style: none;
+  margin: 0;
   padding: 0;
+}
 
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+.link {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.title {
+  color: var(--title-text-color);
+}
+
+.section {
+  padding: 94px;
 }
 
 /* =========================================LOGO*/
@@ -117,9 +121,8 @@ ol {
 
 /* =======================================NAV*/
 
-.nav {
+.nav-main {
   display: flex;
-  align-items: center;
 }
 
 /* nav menu */
@@ -127,6 +130,9 @@ ol {
   display: flex;
   margin-left: 93px;
 }
+
+/* .nav-item {
+} */
 
 .nav-menu .nav-item:not(:last-child) {
   margin-right: 50px;
@@ -162,8 +168,8 @@ ol {
   margin-right: 50px;
 }
 
-.nav-list .nav-contact {
-  display: block;
+.nav-list .contact {
+  /* display: block; */
   padding: 32px 0;
 
   color: var(--primary-text-color);
@@ -172,8 +178,16 @@ ol {
   letter-spacing: 0.02em;
 }
 
-.nav-contact:hover,
-.nav-contact:focus {
+/* .nav-mail {
+  min-width: 135px;
+}
+
+.nav-tel {
+  min-width: 122px;
+} */
+
+.contact:hover,
+.contact:focus {
   color: var(--accent);
 }
 
@@ -228,7 +242,6 @@ ol {
 
 .about-list {
   display: flex;
-  margin: 94px 0;
 }
 
 .about-item {
@@ -257,7 +270,6 @@ ol {
 
 .work-list {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .work-item {
@@ -288,7 +300,6 @@ ol {
 
 .team-list {
   display: flex;
-  margin-bottom: 94px;
 }
 
 .team-item {
@@ -306,9 +317,9 @@ ol {
   margin-right: 0;
 }
 
-.team-section-title {
+/* .team-section-title {
   padding-top: 94px;
-}
+} */
 
 .team-subtitle {
   margin-top: 30px;
