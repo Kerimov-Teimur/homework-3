@@ -85,7 +85,7 @@ ol {
 }
 
 .section {
-  padding: 94px;
+  padding: 94px 0;
 }
 
 /* =========================================LOGO*/
@@ -123,6 +123,7 @@ ol {
 
 .nav-main {
   display: flex;
+  align-self: center;
 }
 
 /* nav menu */
@@ -196,6 +197,7 @@ ol {
   background-color: var(--footer-bcg-color);
   color: var(--white-color);
   text-align: center;
+  padding: 200px;
 }
 
 .hero-title {
@@ -206,10 +208,11 @@ ol {
   text-transform: uppercase;
 
   display: block;
-  padding: 200px 0 30px 0;
   max-width: 696px;
   text-align: center;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
 }
 
 .hero-btn {
@@ -268,6 +271,10 @@ ol {
 
 /* ======================================WORK*/
 
+.work.section {
+  padding-top: 0;
+}
+
 .work-list {
   display: flex;
 }
@@ -285,7 +292,7 @@ ol {
 
 .work-section-title,
 .team-section-title {
-  padding-bottom: 50px;
+  margin-bottom: 50px;
 
   font-size: 36px;
   line-height: 1.17;
@@ -305,8 +312,7 @@ ol {
 .team-item {
   width: calc((100%-3 * 30px) / 4);
   margin-right: 30px;
-  width: 270px;
-  height: 368px;
+  padding-bottom: 30px;
 
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
